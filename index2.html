@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 03 Dec Quiz app</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <div id="quiz-container">
+    <div id="question-container" class="question"></div>
+    <div id="option-container" class="option"></div>
+    </div>
+    <h1 id="score-container" class="score" style="display: none;"></h1>
+
+
+
+    <script>
+        var questions = [
+            {
+                question:"what is the capital of france?",
+                options:["berlin","madrid","Paris","Lisbon"],
+                answer: 2
+            },
+            {
+                question:"What is 2 + 2?",
+                options:["2","3","4","44"],
+                answer: 2
+            },
+            {
+                question:"What is the largest ocean in the world?",
+                options:["Pacific","Atlentic","indian","Arabian"],
+                answer: 0
+            },
+        ];
+
+        var currentQuestionIndex = 0;
+        var score = 0;
+
+            function loadQuestion(){
+
+                var questioncontainer = document.getElementById("question-container");
+                var optionscontainer = document.getElementById("options-container");
+
+                if(currentQuestionindex < questions.length ){
+
+                    questioncontainer.textContent = questions[currentQuestionIndex].question;
+                    optionscontainer.innerHTML = "";
+                    
+                    question[currentQuestionIndex].option.
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         for(var i = 0 ; i < question.length ; i++){
+//             var userAnswer = prompt(question[i].question + "\n" + question[i].option.join("\n"));
+
+//             if (parseInt(userAnswer) === question[i].answer){
+//                 score++;
+//             }
+//         }
+
+//             alert("your score is: " + score +"/" + question.lenght);
+
+
+// var a = prompt("hi user user put your name here")
+//         alert("Name")
+//         document.write(a)
+    </script>
+</body>
+</html>
